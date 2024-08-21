@@ -17,8 +17,37 @@ section.Formulario1 {
     padding: 10px;                      
     border: 5px solid #cbc8c8;           
     border-radius: 1px;                 
-    width: 400px;                       
+    width: 400px;  
+    height: 650px;                     
 }
 img {
-    border-radius: 60px;
+    border-radius: 200px;
 }
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f19f05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#Olvide {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+}
+
