@@ -1,14 +1,45 @@
 body {
-    font-family: Arial;                 
-    background-color: #e3e1e1d7;     
-    color: #d95e06;                   
-    display: flex;                    
-    justify-content: center;         
-    align-items: center;              
-    height: 100vh;  
-    margin-bottom: 0; 
-    margin-top: 10px;                  
+    font-family: Arial, sans-serif;        /* Añadí una fuente de respaldo */
+    background-color: #e3e1e1;             /* Corregí el código de color, eliminando el valor inválido */
+    color: #d95e06;                        /* Mantengo el color de texto */
+    display: flex;                         
+    justify-content: center;               
+    align-items: center;                   
+    height: 100vh;                         
+   
+    padding: 10px;                         /* Añadí un padding para evitar que el contenido se pegue a los bordes */
+    box-sizing: border-box;                /* Asegura que el padding se incluya en el tamaño total del elemento */
+    text-align: center;                    /* Centra el texto dentro del body */
+
+    margin: 0;                             /* Establezco un margen consistente */
+  
+
+    
 }
+h1 {
+    
+    font-size: 35px;                    /* Tamaño de fuente más grande */
+    color: #d95e06;                     /* Color del texto */
+    text-align: center;                 /* Centra el título */
+    margin: 0;                          /* Elimina márgenes predeterminados */
+    padding: 10px 0;                    /* Añade espacio arriba y abajo */
+    text-transform: uppercase;          /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px;                /* Espacio entre letras */
+}
+
+h2 {
+   
+    font-size: 28px;                    /* Tamaño de fuente menor que el h1 */
+    color: #0056b3;                     /* Un color diferente para el subtítulo */
+    text-align: center;                 /* Centra el subtítulo */
+    margin: 0;                          /* Elimina márgenes predeterminados */
+    padding: 5px 0;                     /* Añade espacio arriba y abajo y 0 izquiera y derecha*/
+                                       
+    letter-spacing: 1px;                /* Espacio entre letras */
+}
+
+
+
 section.Formulario1 {
     display: flex;                      
     flex-direction: column;            
@@ -17,19 +48,19 @@ section.Formulario1 {
     padding: 10px;                      
     border: 5px solid #cbc8c8;           
     border-radius: 1px;                 
-    width: 400px;  
-    height: 650px;                     
+    width: 410px;          /* ancho*/
+    height: 650px;       /* largo*/              
 }
 img {
     border-radius: 200px;
 }
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+#Usuario, #Contraseña {
+    width: calc(100% - 22px);         /* Ancho completo menos el padding del contenedor */
+    padding: 10px;                    /* Espacio interior en los campos de entrada */
+    margin-bottom: 10px;              /* Espacio inferior entre los campos de entrada */
+    border: 1px solid #ccc;           /* Borde ligero */
+    border-radius: 5px;               /* Bordes redondeados */
+    box-sizing: border-box;           /* Incluye padding y borde en el tamaño total */
 }
 button[type="submit"] {
     width: 100%;
@@ -40,6 +71,7 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    padding: 5px 0;                     /* Añade espacio arriba y abajo y 0 izquiera y derecha*/
 }
 #Olvide {
     display: block;
@@ -50,4 +82,66 @@ button[type="submit"] {
     font-size: 14px;
     font-weight: bold;
 }
+/* Pagina 2 modificaciones en css*/
+section.SolicitarContrase {
+    display: flex;                      
+    flex-direction: column;            
+    align-items: center;              
+    background-color: #f9f4f4;           
+    padding: 10px;                      
+    border: 5px solid #cbc8c8;           
+    border-radius: 1px;                 
+    width: 400px;  
+    height: 650px;                     
+}
+#parrafoRestablecer {
+    font-family: 'Arial';                /* Fuente principal */
+    font-size: 14px;                    /* Tamaño de fuente adecuado */
+    color: #333;                        /* Color del texto para buena legibilidad */
+    line-height: 1.5;                   /* Espacio entre líneas para mejorar la legibilidad */
+    text-align: justify;                 /* Centra el texto en el párrafo */
+    margin: 20px 0;                     /* Margen superior e inferior para separar del contenido alrededor */
+    padding: 15px;                      /* Espacio interior para evitar que el texto se pegue a los bordes del párrafo */
+    background-color: #f9f9f9;          /* Fondo claro para diferenciar el párrafo del resto del contenido */
+    border: 1px solid #ddd;             /* Borde sutil alrededor del párrafo */
+    border-radius: 5px;                 /* Bordes redondeados para un estilo más suave */
+}
+#Correo{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#Cancelar {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+/* Pagina 3 modificaciones en css*/
+section.reestablecerContraseña {
+    display: flex;                      
+    flex-direction: column;            
+    align-items: center;              
+    background-color: #f9f4f4;           
+    padding: 10px;                      
+    border: 5px solid #cbc8c8;           
+    border-radius: 1px;                 
+    width: 400px;  
+    height: 650px;                     
+}
+
+#Codigo,#Ncontraseña, #Rcontraseña{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
